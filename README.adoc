@@ -1,17 +1,12 @@
 = Docker ENV demo
 
-== install dependencies:
+== Build the docker image:
 	
-	$ npm install
-
-or use yarn:
-
-	$ yarn
+	$ docker build -t env-demo .
 
 == run the app:
      
-     $ npm start
-     $ DEBUG=Totally npm start
-     $ DEBUG=WhyNot npm start
+     $ docker run -d --rm env-demo
+     $ docker run -d --rm -e DEBUG=HereWeGo env-demo
 
 Then visit http://localhost:3000
