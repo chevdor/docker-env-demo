@@ -1,0 +1,9 @@
+= Docker ENV demo
+
+install dependencies:
+	
+	$ cd . && npm install
+
+run the app:
+     
+     $ DEBUG=docker-env-demo:* npm start
